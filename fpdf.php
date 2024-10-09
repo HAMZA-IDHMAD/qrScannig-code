@@ -103,7 +103,7 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	$this->iconv = function_exists('iconv');
 	// Font path
 	if(defined('FPDF_FONTPATH'))
-		$this->fontpath = FPDF_FONTPATH;
+	$this->fontpath = dirname(__FILE__) . '/font/';
 	else
 		$this->fontpath = dirname(__FILE__).'/font/';
 	// Core fonts
